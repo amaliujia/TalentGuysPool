@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+/*for global*/
+body,html{
+	padding:0px;
+	margin:0px;
+	font-family:"微软雅黑";
+	overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+input[type="checkbox"],input[type="button"], input[type="submit"]{
+	cursor: pointer;
+}
+
+/*struct*/
+.wrapper{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border-bottom:1px solid #EDEDED;
+	/*border:#900 solid 2px;*/
+}
+.wrapper>.inner{
+	width:1000px;
+	margin:auto;
+	padding:5px 20px 5px 20px;
+}
+
+/*Thead*/
+#TheadWrapper{
+	background:#000;
+	border:none;
+	position:fixed;
+	z-index:100;
+}
+#TheadWrapper>.inner{
+	height:5px;
+	position:relative;
+}
+#TheadWrapper>.inner>.nav li{
+	float:right;
+	color:white;
+	padding:0 10px 0px 10px;
+	font-weight:bold;
+}
+#logo{
+	position: absolute;
+	width: 140px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background: #09F;
+	left: -110px;
+	cursor: pointer;
+	top: -10px;
+	padding: 10px 5px 7px 5px;
+	z-index: 10;
+	color: white;
+	border-radius: 10px;
+	text-shadow: #D8D2D2 0px 1px 5px;
+	box-shadow:#06F 0px -3px 40px  inset;
+}
+/*******************************************************************************************************************************************/
+/*header*/
+#headerWrapper{
+	margin-top:10px;
+	border-top:1px solid #EDEDED;
+	background:url(../img/header-bg.png) repeat-x scroll 0 bottom white;
+}
+#headerWrapper .inner{
+	padding:20px;
+	height:35px;	
+}
+#headerWrapper>.inner .f,.UctrlItem{
+	float:left;
+	margin-right:40px;
+	height:100%;
+	overflow:hidden;
+}
+#Uname{
+	width:150px;
+	font-weight:bold;
+	font-size:24px;
+	height:100%;
+}
+.UctrlItem{
+	height:35px;
+	font-size: 14px;
+	width:140px;
+    padding: 5px 10px 5px 10px;
+	/* cursor:pointer; */
+    color: #757575;
+}
+.UctrlItem:hover{
+	color:#09F;
+}
+/******************************************************************************************************************************/
+ /*NavWrapper*/
+#NavWrapper{
+	background:url(../img/header-bg.png) repeat-x scroll 0 bottom  #EDEFF3;
+}
+#NavWrapper .inner{
+	width:1000px;
+	 height:40px;
+	 color:white;
+}
+#NavWrapper .inner .navItem{
+	height: 35px;
+	font-size: 16px;
+	width: 120px;
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px solid #EDEDED;
+	cursor: pointer;
+	color: #757575;
+	float: left;
+}
+#NavWrapper .inner .navItem:hover{
+	color:#900;
+}
+/******************************************************************************************************************************/
+/*contentWrapper*/
+#contentWrapper .inner{
+	height:auto;
+	background:#EDEFF3;
+	padding:20px;
+}
+#contentWrapper .inner .left,#contentWrapper .inner .right{
+	width:260px;
+	background-color:#FFF;
+	min-height:600px;
+	height:auto;
+	float:left;
+	margin-left:0px;
+	margin-right:30px;
+}
+#contentWrapper .inner .right{
+	width:670px;
+	margin-left:0px;
+}
+#contentWrapper>.inner>.left>.H{
+	width:200px;
+	margin:auto;
+}
+#contentWrapper>.inner>.left>.H h3{
+	background:#009FDC;
+	padding:9px 9px 7px 20px;
+	color:white;
+	position:relative;
+}
+#contentWrapper>.inner>.left>.H li{
+	background:#EDEFF3;
+	color:#999;
+	padding:5px 5px 7px 20px;
+	margin:5px;
+}
+#contentWrapper>.inner>.left>.H li a{
+	color:#999;
+}
+#contentWrapper>.inner>.left>.H li a:hover{
+	color:#06F;
+}
+#contentWrapper>.inner>.left>.H li label{
+	float:right;
+	color: #900;
+}
+#contentWrapper>.inner>.right{
+}
+
+
+/******************************************************************************************************************************/
+/*footer*/
+#footerWrapper{
+	background-color:#09F;
+}
+#footerWrapper .inner{
+	height:5px;
+
+}
+
+/*******************************************************/
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

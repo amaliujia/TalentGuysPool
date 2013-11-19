@@ -1,0 +1,52 @@
+<include file="Enterprise:header" /> 
+<link  rel="stylesheet" href="__PUBLIC__/css/enterprise.css" type="text/css"/>
+<div class="container" >
+	<div class="table">
+		<h2 align="center">创建教师账号</h2>
+		<form method="post" action="__URL__/_createTeacher">
+			<table>
+					<tr>
+						<td>账号：</td>
+						<td><input type="text" name="tid" class="text" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td  style="color:red;">
+							账号请填写姓的全拼音和名的拼音缩写，全小写。如 张无忌(zhangwj)
+						</td>
+					</tr>
+					
+					<tr>
+						<td>姓名：</td>
+						<td><input type="text" name="tname" class="text"/></td>
+					</tr>
+					<tr>
+						<td>学校：</td>
+						<td><input type="text" name="uname" class="text"/></td>
+					</tr>
+					<tr>
+						<td>电话：</td>
+						<td><input  type="text" name="tel" class="text" /></td>
+					</tr>
+					<tr>
+						<td>邮箱：</td>
+						<td><input type="text" name="email" class="text" /></td>
+					</tr>
+					<tr>
+						<td>地址：</td>
+						<td><input type="text" name="address" class="text" /></td>
+					</tr>
+					<tr>
+						<td>职位：</td>
+						<td><input type="text" name="position" class="text" /></td>
+					</tr>
+			</table>
+			 <br/>
+				 <br />
+				 <input type="submit" class="submit" value="提交"/> 
+		</form>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[ 2012-08-10T13:14:14+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T13:14:14+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.003370s ]
+[ 2012-08-10T13:14:14+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005922s ]
+[ 2012-08-10T13:15:16+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T13:15:16+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000689s ]
+[ 2012-08-10T13:15:16+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000823s ]
+[ 2012-08-10T13:16:41+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T13:16:41+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000960s ]
+[ 2012-08-10T13:16:41+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001086s ]
+[ 2012-08-10T13:35:02+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T13:35:02+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002537s ]
+[ 2012-08-10T13:35:02+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002737s ]
+[ 2012-08-10T14:42:40+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T14:42:40+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.008547s ]
+[ 2012-08-10T14:42:40+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.024075s ]
+[ 2012-08-10T15:43:26+08:00 ] /talent_pool/ | ERR: (ThinkException) 模板不存在[./talent_pool/Tpl/Index/index.html]
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000667s ]
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000788s ]
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --START--
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Run LocationTemplate Behavior [ RunTime:0.000904s ]
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.001037s ]
+[ 2012-08-10T15:43:44+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --START--
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run ParseTemplate Behavior [ RunTime:0.171488s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.171610s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --START--
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run ContentReplace Behavior [ RunTime:0.018645s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run TokenBuild Behavior [ RunTime:0.038206s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001546s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run ShowRuntime Behavior [ RunTime:0.004828s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.063636s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --START--
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.002131s ]
+[ 2012-08-10T15:43:45+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.002270s ]

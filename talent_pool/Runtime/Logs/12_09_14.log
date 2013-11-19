@@ -1,0 +1,738 @@
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.006322s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.033556s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002046s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002182s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run ParseTemplate Behavior [ RunTime:0.081762s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.081892s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run ContentReplace Behavior [ RunTime:0.001250s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run TokenBuild Behavior [ RunTime:0.002226s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001011s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001279s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.006060s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001236s ]
+[ 2012-09-14T14:08:12+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001337s ]
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Run CheckRoute Behavior [ RunTime:0.037344s ]
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.037501s ]
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000877s ]
+[ 2012-09-14T14:08:17+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000981s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Index/login | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.178903s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Index/login | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.000844s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run CheckRoute Behavior [ RunTime:0.000865s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.000991s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000788s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000915s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.006052s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) LIMIT 1   [ RunTime:0.000707s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.039083s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.000484s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006122s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.000396s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.068633s ]
+[ 2012-09-14T14:08:18+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.000481s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.136681s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.000395s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006241s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.000390s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001097s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001207s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ParseTemplate Behavior [ RunTime:0.104007s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.104128s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ContentReplace Behavior [ RunTime:0.000678s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run TokenBuild Behavior [ RunTime:0.001232s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000491s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000774s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003504s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000795s ]
+[ 2012-09-14T14:08:19+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.000909s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run CheckRoute Behavior [ RunTime:0.001171s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ route_check ] --END-- [ RunTime:0.001295s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000776s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000876s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006162s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.000664s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006474s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.000615s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006290s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.000648s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005621s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.000535s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006285s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.000581s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005542s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT * FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) ORDER BY sendtime DESC LIMIT 0,20   [ RunTime:0.000648s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `enterprise` [ RunTime:0.161073s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT * FROM `enterprise` WHERE ( `eid` = 'ENT_ibm' ) LIMIT 1   [ RunTime:0.000727s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `enterprise` [ RunTime:0.006134s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT * FROM `enterprise` WHERE ( `eid` = 'ENT_ibm' ) LIMIT 1   [ RunTime:0.000643s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005656s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) LIMIT 1   [ RunTime:0.017672s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run LocationTemplate Behavior [ RunTime:0.001087s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_template ] --END-- [ RunTime:0.001191s ]
+[ 2012-09-14T14:08:21+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | NOTIC: [8] Undefined variable: username 5bfb22a00fe5e634f9918981125566e8.php 第 19 行.
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run ParseTemplate Behavior [ RunTime:0.352523s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_parse ] --END-- [ RunTime:0.352627s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run ContentReplace Behavior [ RunTime:0.000696s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run TokenBuild Behavior [ RunTime:0.000668s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000455s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run ShowRuntime Behavior [ RunTime:0.000772s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002894s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Run ShowPageTrace Behavior [ RunTime:0.000636s ]
+[ 2012-09-14T14:08:22+08:00 ] /talent_pool/index.php/Teacher/mailbox | INFO: Tag[ view_end ] --END-- [ RunTime:0.000732s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run CheckRoute Behavior [ RunTime:0.001582s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001714s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000701s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000807s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006831s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000751s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run LocationTemplate Behavior [ RunTime:0.000800s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --END-- [ RunTime:0.000905s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ParseTemplate Behavior [ RunTime:0.011672s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011772s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ContentReplace Behavior [ RunTime:0.000663s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run TokenBuild Behavior [ RunTime:0.000681s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000649s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowRuntime Behavior [ RunTime:0.000680s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002964s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000506s ]
+[ 2012-09-14T14:08:24+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000600s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run CheckRoute Behavior [ RunTime:0.000880s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001004s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000648s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000745s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006876s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000675s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run LocationTemplate Behavior [ RunTime:0.000792s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --END-- [ RunTime:0.000895s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ParseTemplate Behavior [ RunTime:0.012487s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012587s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ContentReplace Behavior [ RunTime:0.000581s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run TokenBuild Behavior [ RunTime:0.000637s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000349s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowRuntime Behavior [ RunTime:0.000650s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002501s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000511s ]
+[ 2012-09-14T14:08:32+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000607s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run CheckRoute Behavior [ RunTime:0.001167s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001297s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000758s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000865s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006180s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000652s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run LocationTemplate Behavior [ RunTime:0.001086s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001192s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ParseTemplate Behavior [ RunTime:0.012777s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012878s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ContentReplace Behavior [ RunTime:0.000737s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run TokenBuild Behavior [ RunTime:0.000772s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000445s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowRuntime Behavior [ RunTime:0.000749s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002973s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000623s ]
+[ 2012-09-14T14:12:43+08:00 ] /talent_pool/index.php/Teacher/sendEmail/to_student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000716s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.001682s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001838s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001027s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001128s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006346s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000620s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001455s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001567s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.029897s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.030003s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.000996s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001090s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000717s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001000s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004080s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000882s ]
+[ 2012-09-14T14:12:45+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000978s ]
+[ 2012-09-14T14:13:02+08:00 ] /talent_pool/index.php/Teacher/getRecList/objtype/student | ERR: (ThinkException) 请在ajax发送中定义信息接收者对象类型！
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.002380s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.002525s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002835s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002946s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006105s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000782s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001933s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.002049s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.053247s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.053352s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.002158s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001462s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001100s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001544s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.006542s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.001563s ]
+[ 2012-09-14T14:19:05+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.001660s ]
+[ 2012-09-14T14:21:11+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | ERR: (ThinkException) Action:getRecList您所请求的方法不存在！
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.001489s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001623s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001100s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001203s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.021358s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000968s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001506s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001621s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.013945s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014052s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.000961s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001029s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000699s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001011s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003980s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000885s ]
+[ 2012-09-14T14:21:36+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000982s ]
+[ 2012-09-14T14:22:01+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:23:07+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.001251s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001386s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001034s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001131s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006015s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000635s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001756s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001907s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.014790s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014926s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.000963s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001019s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000705s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001025s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003990s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000902s ]
+[ 2012-09-14T14:23:52+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.001008s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run CheckRoute Behavior [ RunTime:0.001837s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ route_check ] --END-- [ RunTime:0.001967s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001113s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001215s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.007603s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000748s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run LocationTemplate Behavior [ RunTime:0.001462s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_template ] --END-- [ RunTime:0.001570s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run ParseTemplate Behavior [ RunTime:0.014045s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014147s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run ContentReplace Behavior [ RunTime:0.000996s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run TokenBuild Behavior [ RunTime:0.001033s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000720s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run ShowRuntime Behavior [ RunTime:0.001064s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004088s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+[ 2012-09-14T14:24:17+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/localhost/talent_pool/index.php/Teacher/_sendEmail | INFO: Tag[ view_end ] --END-- [ RunTime:0.000998s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.002002s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.002152s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001768s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001889s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006766s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000616s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001731s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001837s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.014615s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014718s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.000985s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001043s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000711s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001022s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004100s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000816s ]
+[ 2012-09-14T14:26:07+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.000920s ]
+[ 2012-09-14T14:26:17+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run CheckRoute Behavior [ RunTime:0.001315s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ route_check ] --END-- [ RunTime:0.001446s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001082s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001182s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined index: keyword TeacherAction.class.php 第 24 行.
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006569s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | SQL: SELECT * FROM `student` WHERE ( `sname` LIKE '%%' ) AND ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000556s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run LocationTemplate Behavior [ RunTime:0.001550s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_template ] --END-- [ RunTime:0.001665s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 67 行.
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_sys_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 68 行.
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | NOTIC: [8] Undefined variable: stat_std_msg b95ca9a4f28e691681e841351c9d0ff5.php 第 69 行.
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ParseTemplate Behavior [ RunTime:0.014912s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_parse ] --END-- [ RunTime:0.015019s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ContentReplace Behavior [ RunTime:0.001028s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run TokenBuild Behavior [ RunTime:0.001039s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000722s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowRuntime Behavior [ RunTime:0.001046s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004116s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Run ShowPageTrace Behavior [ RunTime:0.000912s ]
+[ 2012-09-14T14:27:56+08:00 ] /talent_pool/index.php/Teacher/sendEmail/objtype/student | INFO: Tag[ view_end ] --END-- [ RunTime:0.001013s ]
+[ 2012-09-14T14:28:05+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:28:44+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:30:00+08:00 ] /talent_pool/index.php/__URL__/mailbox.html | ERR: (ThinkException) 无法加载模块__URL__
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run CheckRoute Behavior [ RunTime:0.001489s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001613s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001221s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001319s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.035241s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) LIMIT 1   [ RunTime:0.000593s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006503s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.000594s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.008738s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.000428s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005816s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.000618s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005616s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.000413s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.015940s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.000423s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001660s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001779s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ParseTemplate Behavior [ RunTime:0.028852s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.028980s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ContentReplace Behavior [ RunTime:0.000961s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run TokenBuild Behavior [ RunTime:0.000996s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000758s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowRuntime Behavior [ RunTime:0.001207s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004216s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.001008s ]
+[ 2012-09-14T14:30:38+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.001112s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run CheckRoute Behavior [ RunTime:0.001356s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --END-- [ RunTime:0.001478s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001104s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001202s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006133s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SELECT * FROM `student` WHERE ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000534s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run LocationTemplate Behavior [ RunTime:0.001531s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --END-- [ RunTime:0.001666s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ParseTemplate Behavior [ RunTime:0.037807s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --END-- [ RunTime:0.037944s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ContentReplace Behavior [ RunTime:0.001083s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run TokenBuild Behavior [ RunTime:0.001105s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000762s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowRuntime Behavior [ RunTime:0.001487s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004752s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowPageTrace Behavior [ RunTime:0.001189s ]
+[ 2012-09-14T14:30:39+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --END-- [ RunTime:0.001293s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run CheckRoute Behavior [ RunTime:0.019097s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.028415s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.017651s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.017771s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run LocationTemplate Behavior [ RunTime:0.008434s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.008592s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run ParseTemplate Behavior [ RunTime:0.077469s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.077603s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run ContentReplace Behavior [ RunTime:0.001241s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run TokenBuild Behavior [ RunTime:0.001430s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001235s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001321s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005529s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001692s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001808s ]
+[ 2012-09-14T15:32:21+08:00 ] /talent_pool/index.php/css/struct.css | ERR: (ThinkException) 无法加载模块css
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Run CheckRoute Behavior [ RunTime:0.001120s ]
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.001259s ]
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000882s ]
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000980s ]
+[ 2012-09-14T15:32:31+08:00 ] /talent_pool/index.php/Index/login | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006487s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Index/login | SQL: SELECT * FROM `student` WHERE ( `sid` = 'SYSU_10389393' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.001077s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run CheckRoute Behavior [ RunTime:0.001252s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001385s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000890s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000989s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | NOTIC: [2048] Declaration of StudentAction::mailbox() should be compatible with that of CommonUserAction::mailbox() StudentAction.class.php 第 2 行.
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006023s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | SQL: SELECT * FROM `student` WHERE ( `sid` = 'SYSU_10389393' ) LIMIT 1   [ RunTime:0.000711s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run LocationTemplate Behavior [ RunTime:0.037230s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.037371s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run ParseTemplate Behavior [ RunTime:0.180135s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.180263s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run ContentReplace Behavior [ RunTime:0.000794s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run TokenBuild Behavior [ RunTime:0.000888s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000571s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000889s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003432s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000755s ]
+[ 2012-09-14T15:32:32+08:00 ] /talent_pool/index.php/Student/student.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.000854s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Run CheckRoute Behavior [ RunTime:0.001340s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.001478s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000943s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001060s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.006058s ]
+[ 2012-09-14T15:38:52+08:00 ] /talent_pool/index.php/Index/login | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.000674s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run CheckRoute Behavior [ RunTime:0.001399s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001528s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000897s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001000s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.051388s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) LIMIT 1   [ RunTime:0.000793s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.081388s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.010146s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.053005s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.000459s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005492s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.000431s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005708s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.001147s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006458s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.000618s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001482s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001599s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ParseTemplate Behavior [ RunTime:0.059683s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.059817s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ContentReplace Behavior [ RunTime:0.001048s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run TokenBuild Behavior [ RunTime:0.000866s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000589s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000994s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003820s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000781s ]
+[ 2012-09-14T15:41:40+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.000883s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run CheckRoute Behavior [ RunTime:0.001464s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001629s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001033s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001135s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.016310s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT * FROM `teacher` WHERE ( `tid` = 'SYSU_wangbq' ) LIMIT 1   [ RunTime:0.000773s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006151s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.000542s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005709s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.000633s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005593s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.000566s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006054s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.000554s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005615s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'SYSU_wangbq' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.000554s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001638s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001782s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ParseTemplate Behavior [ RunTime:0.013117s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013261s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ContentReplace Behavior [ RunTime:0.000784s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run TokenBuild Behavior [ RunTime:0.000809s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000605s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000991s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003518s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.001017s ]
+[ 2012-09-14T15:41:44+08:00 ] /talent_pool/index.php/Teacher/teacher.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.001135s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run CheckRoute Behavior [ RunTime:0.001400s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --END-- [ RunTime:0.001541s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001156s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001256s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006438s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SELECT * FROM `student` WHERE ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000590s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run LocationTemplate Behavior [ RunTime:0.001535s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --END-- [ RunTime:0.001660s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ParseTemplate Behavior [ RunTime:0.151993s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --END-- [ RunTime:0.152125s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ContentReplace Behavior [ RunTime:0.000980s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run TokenBuild Behavior [ RunTime:0.000940s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000701s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowRuntime Behavior [ RunTime:0.001035s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003948s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowPageTrace Behavior [ RunTime:0.000892s ]
+[ 2012-09-14T15:41:49+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --END-- [ RunTime:0.000992s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run CheckRoute Behavior [ RunTime:0.001278s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --END-- [ RunTime:0.001406s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001132s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001240s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.030265s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SELECT * FROM `student` WHERE ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000618s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run LocationTemplate Behavior [ RunTime:0.001347s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --END-- [ RunTime:0.001457s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ParseTemplate Behavior [ RunTime:0.014263s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014391s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ContentReplace Behavior [ RunTime:0.000973s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run TokenBuild Behavior [ RunTime:0.000965s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000695s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowRuntime Behavior [ RunTime:0.001038s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003967s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowPageTrace Behavior [ RunTime:0.001182s ]
+[ 2012-09-14T15:42:08+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --END-- [ RunTime:0.001294s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run CheckRoute Behavior [ RunTime:0.001187s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ route_check ] --END-- [ RunTime:0.001318s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000978s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001099s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SHOW COLUMNS FROM `student` [ RunTime:0.006539s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | SQL: SELECT * FROM `student` WHERE ( `tid` = 'SYSU_wangbq' )  [ RunTime:0.000606s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run LocationTemplate Behavior [ RunTime:0.001516s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_template ] --END-- [ RunTime:0.001635s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ParseTemplate Behavior [ RunTime:0.013874s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013999s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ContentReplace Behavior [ RunTime:0.000858s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run TokenBuild Behavior [ RunTime:0.000848s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000679s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowRuntime Behavior [ RunTime:0.000931s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003590s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Run ShowPageTrace Behavior [ RunTime:0.000791s ]
+[ 2012-09-14T15:42:29+08:00 ] /talent_pool/index.php/Teacher/manage_page | INFO: Tag[ view_end ] --END-- [ RunTime:0.000889s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run CheckRoute Behavior [ RunTime:0.017166s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.017310s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001794s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001894s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run LocationTemplate Behavior [ RunTime:0.012046s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.012185s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run ParseTemplate Behavior [ RunTime:0.032467s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.032604s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run ContentReplace Behavior [ RunTime:0.001418s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run TokenBuild Behavior [ RunTime:0.006127s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001466s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001898s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.011220s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.002107s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.002224s ]
+[ 2012-09-14T15:52:38+08:00 ] /talent_pool/index.php/css/struct.css | ERR: (ThinkException) 无法加载模块css
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Run CheckRoute Behavior [ RunTime:0.001372s ]
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.001499s ]
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001091s ]
+[ 2012-09-14T15:52:46+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001205s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Index/login | SQL: SHOW COLUMNS FROM `company` [ RunTime:0.580096s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Index/login | SQL: SELECT * FROM `company` WHERE ( `cid` = 'COM_boc' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.000928s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run CheckRoute Behavior [ RunTime:0.001573s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001761s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001146s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001251s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | NOTIC: [2048] Declaration of CompanyAction::mailbox() should be compatible with that of CommonUserAction::mailbox() CompanyAction.class.php 第 3 行.
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | SQL: SHOW COLUMNS FROM `company` [ RunTime:0.006463s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | SQL: SELECT * FROM `company` WHERE ( `cid` = 'COM_boc' ) LIMIT 1   [ RunTime:0.043648s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001449s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001551s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ParseTemplate Behavior [ RunTime:0.012765s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012888s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ContentReplace Behavior [ RunTime:0.000927s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run TokenBuild Behavior [ RunTime:0.000857s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000580s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000910s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003571s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000854s ]
+[ 2012-09-14T15:52:47+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.000951s ]
+[ 2012-09-14T15:52:52+08:00 ] /talent_pool/index.php/Company/findStudent | ERR: (ThinkException) 非法操作findStudent
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run CheckRoute Behavior [ RunTime:0.001241s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001365s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001023s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001120s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | NOTIC: [2048] Declaration of CompanyAction::mailbox() should be compatible with that of CommonUserAction::mailbox() CompanyAction.class.php 第 3 行.
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | SQL: SHOW COLUMNS FROM `company` [ RunTime:0.007541s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | SQL: SELECT * FROM `company` WHERE ( `cid` = 'COM_boc' ) LIMIT 1   [ RunTime:0.000589s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001326s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001445s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ParseTemplate Behavior [ RunTime:0.010694s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010821s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ContentReplace Behavior [ RunTime:0.000910s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run TokenBuild Behavior [ RunTime:0.000925s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000701s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ShowRuntime Behavior [ RunTime:0.000995s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003825s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000953s ]
+[ 2012-09-14T15:53:16+08:00 ] /talent_pool/index.php/Company/company.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.001055s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ route_check ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run CheckRoute Behavior [ RunTime:0.001231s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.001352s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ app_begin ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001120s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001218s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | NOTIC: [2048] Declaration of CompanyAction::mailbox() should be compatible with that of CommonUserAction::mailbox() CompanyAction.class.php 第 3 行.
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_template ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run LocationTemplate Behavior [ RunTime:0.001205s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.001315s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_parse ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run ParseTemplate Behavior [ RunTime:0.016456s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016587s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_filter ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run ContentReplace Behavior [ RunTime:0.001001s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run TokenBuild Behavior [ RunTime:0.000976s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000695s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run ShowRuntime Behavior [ RunTime:0.001078s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004101s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_end ] --START--
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.000887s ]
+[ 2012-09-14T15:53:17+08:00 ] /talent_pool/index.php/Company/talent_search.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.000988s ]

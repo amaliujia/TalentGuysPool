@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+/************************************************************/
+#RightDiv h2{
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	color: #333;
+	font-size:20px;
+	text-shadow: 0 1px 0 white;
+	padding: 10px 20px;
+	background: none repeat scroll 0 0 #EDEDED;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#RightDiv table{
+	margin:auto;
+	padding:10px 0px 10px 0px;
+	font-size:17px;
+	color: #244475;
+}
+#RightDiv  .Label{
+	width:100px;
+	text-align:right;
+}
+#RightDiv  .text{
+	width:300px;
+	text-align:left;
+}
+#RightDiv  input,#RightDiv  select,#brief{
+	border: 1px #D1D1D1 solid;
+	background: #FCFCFC;
+	position: relative;
+	left: 30px;
+	font-size:17px;
+}
+#RightDiv  input[type=checkbox]{
+	position:inherit;
+	left:0px;
+}
+#IBM table{
+	padding:10px 0px 10px;
+}
+#IBM table td{
+	width:267px;
+	text-align:left;
+	height:60px;
+}
+#IBM table tr{
+	height:60px;
+}
+#itskill span{
+	padding: 5px 10px 5px 10px;
+	background: #CDE2F3;
+	color: #3D3D3D;
+	margin: 10px;
+	float: left;
+	border: solid 1px #C8E9F7;
+}
+textarea{
+	border: 1px #D1D1D1 solid;
+	background: #FCFCFC;
+	position: relative;
+	font-size: 17px;
+}
+#brief{
+}
+
+

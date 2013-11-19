@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+/*for global*/
+body,html{
+	padding:0px;
+	margin:0px;
+	font-family:"微软雅黑";
+	overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+
+/*struct*/
+.wrapper{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border-bottom:1px solid #EDEDED;
+	/*border:#900 solid 2px;*/
+}
+.wrapper>.inner{
+	width:1000px;
+	margin:auto;
+	padding:5px 20px 5px 20px;
+}
+
+/*Thead*/
+#TheadWrapper{
+	background:#000;
+	border:none;
+}
+#TheadWrapper>.inner{
+	height:5px;
+	position:relative;
+}
+#TheadWrapper>.inner>.nav li{
+	float:right;
+	color:white;
+	padding:0 10px 0px 10px;
+	font-weight:bold;
+}
+#logo{
+	position: absolute;
+	width: 140px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background: #09F;
+	left: -110px;
+	cursor: pointer;
+	top: -10px;
+	padding: 10px 5px 7px 5px;
+	z-index: 10;
+	color: white;
+	border-radius: 10px;
+	text-shadow: #D8D2D2 0px 1px 5px;
+	box-shadow:#06F 0px -3px 40px  inset;
+}
+/*******************************************************************************************************************************************/
+/*header*/
+#headerWrapper{
+	border-top:1px solid #EDEDED;
+	margin-top:50px;
+	margin-bottom: 15px;
+	background:url(../img/header-bg.png) repeat-x scroll 0 bottom white;
+}
+#headerWrapper .inner{
+	padding:20px;
+	height:120px;
+	position:relative;	
+}
+#headerWrapper>.inner .f{
+	width:160px;
+	float:left;
+	margin-right:40px;
+	height:100%;
+	overflow:hidden;
+}
+#Uname{
+	width:150px;
+	font-weight:bold;
+	font-size:30px;
+	height:100%;
+}
+.UctrlItem{
+	font-size: 17px;
+	width:150px;
+    padding: 5px 10px 5px 10px;
+	border-bottom:1px solid #EDEDED;
+	cursor:pointer;
+    color: #757575;
+}
+.UctrlItem:hover{
+	color:#09F;
+}
+ #NStudent{
+	position: absolute;
+	font-size: 20px;
+	width:140px;
+	top: 30px;
+	right: 0px;
+	background-color: #F3F3F3;
+	color: #BDBDBD;
+	box-shadow: 0 2px 2px #F0F0F0 inset;
+	border-radius: 5px;
+	text-shadow: #FFF 0px 0px 2px;
+}
+#NStudent .switcher{
+	width: 20%;
+	padding: 5px;
+	float:right;
+	border-left: #1FB2F7 1px solid;
+	background: #535151;
+	color: white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+	text-align:center;
+}
+#NStudent .item{
+	padding: 2px;
+	border-top: 1px solid #E2DADA;
+	text-align: center;
+	text-shadow: none;
+	background: #4B3A3A;
+	display:none;		
+}
+#NStudent .item a{
+	text-decoration:none;
+	color: white;
+	font-size: 17px;
+}
+#NStudent .item:last-child{
+	border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+display: block;
+}
+/*NavWrapper*/
+
+#NavWrapper{
+	padding:30px;
+}
+#NavWrapper .inner{
+	height:300px;
+	background: none repeat scroll 0 0 #EDEFF3;
+	padding:10px;
+}
+#nav{
+	height:100%;
+	box-shadow: 0 1px 1px #CCC  ;
+	background-color:white;
+}
+.navItem{
+	position:relative;
+	width:170px;
+	height:150px;
+	float:left;
+	margin-right:60px;
+	margin-top:80px;
+	text-align:center;
+	color:#666;
+}
+.navItem:hover{
+	color: #185A86;
+	cursor:pointer;
+}
+#nav .navItem:first-child{
+	margin-left:180px;
+}
+#navEmail .hidden{
+	position: absolute;
+	top: -120px;
+	right: -130px;
+	border: solid 1px #E2E5FF;
+	padding: 20px;
+	border-radius: 5px;
+	height: 80px;
+	width: 120px;
+	background: #F2F5FF;
+	display:none;	
+}
+#navEmail .hidden p{
+	list-style:none;
+	color:#666;
+	font-size:17px;
+	padding:0px;
+	margin:0px;
+	text-align:left;
+}
+#navEmail .hidden p label{
+	color:#900;
+}
+	
+/******************************************/
+#footerWrapper{
+	background-color:#09F;
+}
+#footerWrapper .inner{
+	height:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

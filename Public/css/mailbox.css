@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contentWrapper>.inner>.right>div{
+	width:630px;
+	margin:auto;
+	font-size:14px;
+}
+#contentWrapper>.inner{
+	height:650px;
+}
+
+/*************************************************************************/
+/*mailbox part*/
+#contentWrapper>.inner>.right{
+	padding-top:10px;
+	padding-bottom:40px;
+	font-size:15px;
+	color:#666;
+}
+#contentWrapper>.inner>.right table{
+	border-bottom:1px solid #EDEDED;
+	background-color: #FAFAFA;
+    width:630px;
+}
+
+#contentWrapper>.inner>.right table tr{
+	padding:2px;
+	height:60px;
+    background:#F1F1F1;
+}
+#contentWrapper>.inner>.right table td{
+    padding:2px;
+}
+#contentWrapper>.inner>.right table tr:nth-child(2n){
+    background:#E0E0E0;
+}
+#contentWrapper>.inner>.right table .Mcheck{
+	width:40px;
+}
+#contentWrapper>.inner>.right table .Mdel{
+	width:40px;
+}
+
+#contentWrapper>.inner>.right table .Mlabel{
+	width:40px;
+}
+
+#contentWrapper>.inner>.right table .Mname{
+	width:80px;
+}
+#contentWrapper>.inner>.right table .Minfo{
+	width:200px;
+}
+#contentWrapper>.inner>.right table .Mtime{
+	width:80px;
+}
+#contentWrapper>.inner>.right table .Mtype{
+	width:80px;
+}
+
+.title{
+	font-weight: bold;
+	text-align: center;
+}

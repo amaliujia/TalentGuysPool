@@ -1,0 +1,142 @@
+<include file="Enterprise:header" />
+<style>
+
+#Info{
+	width:100%;
+	border: 1px solid #EBEBEB;
+	background: white;
+}
+#Info>div{
+	border-bottom: 1px solid #EBEBEB;
+	min-height:30px;
+	padding: 1px;
+	padding:5px 30px 20px 30px;
+	background:url(__PUBLIC__/img/20120825104630.png) repeat-y;
+}
+#Info .infoName,#Info .infoContent{
+	float:left;
+	height:100%;
+}
+#Info .infoName{
+	width: 83px;
+	color: #494747;
+	font-size: 16px;
+	font-weight: normal;
+	
+}
+#Info .infoContent{
+	width:808px;
+	height:100%;
+	padding-left: 40px;
+	color: gray;
+	font-size: 15px;
+}
+#table_title{
+	margin-right: 50px;
+}
+tr{
+	height:40px;
+}
+td{
+	padding-right:50px;
+}
+.td_title{
+	font-weight:bold;
+}
+</style>
+<div class="wrapper" id="contentWrapper" style="border-bottom:none;">
+ <div class="inner" style="padding:0px; ">
+ 	<div id="Info">
+         <div>
+            <div class="infoName" id="table_title">
+                <h3>基本信息</h3>
+            </div>
+			<div class="infocontent" id="basicinfo">
+			<table>
+				<tr>
+					<td class="td_title">
+						名称：
+					</td>
+					<td id="cname">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						类别：
+					</td>
+					<td id="class">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						地址：
+					</td>
+					<td id="address">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						电话：
+					</td>
+					<td id="tel">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						网址：
+					</td>
+					<td id="net_addr">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						邮箱：
+					</td>
+					<td id="email">
+					</td>
+				</tr>
+				<tr>
+					<td class="td_title">
+						注册时间：
+					</td>
+					<td id="reg_time">
+					</td>
+				</tr>
+			</table>
+			</div>
+            <div class="clear"></div>
+         </div> 
+         <div>
+            <div class="infoName">
+                <h3>公司简介</h3>
+            </div>
+            <div class="infoContent" id="profile">
+			</div>
+            <div class="clear"></div>
+         </div> 
+       <!--  <div>
+            <div class="infoName">
+                <h3>其他</h3>
+            </div>
+            <div class="infoContent">
+			</div>
+            <div class="clear"></div>
+         </div> -->
+    </div>
+ </div>
+</div>
+<script>
+	$(document).ready(function(){
+		var json = {$getJson};
+		json = eval(json);
+		var names = new Array("cname", "net_addr", "class", "address", "tel", "email", "reg_time", "profile");
+		
+		for (var x in names){
+			var name = names[x];
+			$("#"+name).html(json[name]);
+		}
+	});
+</script>
+</body>
+</html>
+

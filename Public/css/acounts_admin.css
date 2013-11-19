@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+#contentWrapper > .Oinner{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	padding:5px 20px 5px 20px;
+	background-color:#EDEFF3;
+	margin-top:15px;
+	min-height:630px;
+}
+/*****/
+#contentWrapper .Oinner .left,#contentWrapper .Oinner .right{
+	width:260px;
+	background-color:#FFF;
+	min-height:600px;
+	height:auto;
+	float:left;
+	margin-left:0px;
+	margin-right:30px;
+	margin-top:5px;
+}
+#contentWrapper .Oinner .right{
+	width:670px;
+	margin-left:0px;
+}
+#contentWrapper>.Oinner>.left>.H{
+	width:200px;
+	margin:auto;
+}
+#contentWrapper>.Oinner>.left>.H h3{
+	background:#009FDC;
+	padding:9px 9px 7px 20px;
+	color:white;
+	position:relative;
+}
+#contentWrapper>.Oinner>.left>.H li{
+	background:#EDEFF3;
+	color:#999;
+	padding:5px 5px 7px 20px;
+	margin:5px;
+}
+#contentWrapper>.Oinner>.left>.H li a{
+	color:#999;
+}
+#contentWrapper>.Oinner>.left>.H li a:hover{
+	color:#06F;
+}
+#contentWrapper>.Oinner>.left>.H li label{
+	float:right;
+	color: #900;
+}
+#contentWrapper>.Oinner>.right{
+
+	font-size: 18px; 
+}
+
+#contentWrapper .NavAcount{
+	margin-top:5px;
+	margin-left: 10px;
+}
+
+#contentWrapper .right table{
+	margin-left: 10px;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: 1px solid #F5F5F5;
+	cursor:pointer;
+}
+#contentWrapper .right table tr{
+	width: 100%;
+	height: 30px;
+	
+}
+ .TCheck{
+	width: 40px;
+}
+.TName{
+	width:80px;
+}
+.TSex{
+	width: 40px;
+}
+.TIdentifier{
+	width: :40px;
+}
+.TSchool{
+width: 	120px;
+}
+.TMajor{
+	width: 150px;
+}
+/******/

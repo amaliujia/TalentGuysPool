@@ -1,0 +1,136 @@
+<include file="Teacher:header" />
+<link rel="stylesheet" href="__PUBLIC__/css/mailbox.css" /> 
+<div class="wrapper" id="contentWrapper">
+	<div class="inner">
+    	<div class="left">
+        	<div id="MailNav" class="H">
+                <h3>写信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
+                <ul>
+                    <li><a href="__URL__/sendEmail/objtype/student">向学生发送信息</a></li>
+                    <li><a href="__URL__/sendEmail/objtype/enterprise">向企业发送信息</a></li>
+                </ul>
+                <br /><br />
+                <h3>收信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
+               <ul>
+                   <li><a href="__URL__/mailbox">所有信息</a><label>{$stat_msg}</label> </li>
+                    <li><a href="__URL__/mailbox/objtype/enterprise">企业信息</a> <label>{$stat_ent_msg}</label></li>
+                    <li><a href="__URL__/mailbox/objtype/student">学生信息</a> <label>{$stat_std_msg}</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right" style="position:relative;">
+           <div >
+                <table id="maillist">  
+					<tr class="title">
+						<td></td>
+						<td>
+							发信人
+						</td>
+						<td>
+							信息主题
+						</td>
+						<td>
+							发信时间
+						</td>
+					</tr>
+                </table>
+           </div>
+            
+           <div style="position:absolute; bottom:10px; left:20px;">
+                 <div class="Mctrl">
+                 <!--<input id="delete" type="button"  value="删除"   />-->
+                 <span style="width:100px; height:10px;"></span>
+                 <span id="pagenum">{$page}</span>/<span id="totalpage">{$totalpage}</span>页
+                 <input id="prev" type="button" value="上一页"/> 
+                 <input id="next" type="button"  value="下一页"/> 
+                 <input id="jumppage" type="number"  style="width:50px" value="1" min=1 max={$totalpage}  />
+                 <input id="jump" type="button" value="跳转"/>  
+                 </div>
+           <div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script>
+//======================CLASS MailEntry
+MailEntry = (function(){
+	function MailEntry(obj, color){
+		this.title = obj["title"];
+	//	this.content = obj["content"];
+		this.sender_id = obj["sender_id"];
+		this.sender_name = obj["sender_name"];
+		this.sendtime = obj["sendtime"];
+		this.msgid = obj["msg_id"];
+		this.unread = obj["unread"];
+		this.build(color);
+	}
+	
+	MailEntry.prototype.build = function(color){
+		var tr = $("<tr></tr>");
+		tr.append($("<td name=\"maillist[]\"><input type=\"checkbox\" /></td>"));
+		tr.append("<td delta-id=\"" + this.sender_id + "\">"+this.sender_name+"</td>");
+		tr.append("<td><a href=\"__URL__/message/msgid/" + this.msgid + "\">" + this.title + "</a></td>");
+		tr.append("<td>"+this.sendtime+"</td>");
+		
+		if (this.unread > 0)
+			tr.css("font-weight","bold");
+		
+		tr.appendTo($("#maillist"));
+	};
+	
+	return MailEntry;
+})();
+
+//======================MAIN
+$(document).ready(function(){
+	//generate mail list
+	var json = {$getJson};
+	var color = "#ccddee";
+	var flag = true;
+	
+	for (var x in json){
+		var obj = json[x];
+		var entry = new MailEntry(obj, color);
+		
+		flag = !flag;
+		if (flag) color = "#ccddee";
+		else color = "#eeddcc";
+	}
+	
+	var valid = function(x, mx){
+		if (x>=1 && x<=mx)
+			return true;
+		return false;
+	};
+	
+	//buttons
+	var page = Number($("#pagenum").html());
+	var mx = Number($("#totalpage").html());
+	var objtype = "{$objtype}";
+	
+	$("#prev").click(function(){
+		page--;
+		if (valid(page, mx))
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+		else
+			page = 1;
+	});
+	$("#next").click(function(){
+		page++;
+		if (valid(page, mx))
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+		else 
+			page = mx;
+	});
+	$("#jump").click(function(){
+		var val = Number($("#jumppage").val());
+		if (valid(val)){
+			page = val;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+		}
+	});
+});
+</script>
+<br />
+</body>
+</html>

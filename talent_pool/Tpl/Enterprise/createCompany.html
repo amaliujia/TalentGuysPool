@@ -1,0 +1,62 @@
+<include file="Enterprise:header" /> 
+<link  rel="stylesheet" href="__PUBLIC__/css/enterprise.css" type="text/css"/>
+<div class="container" >
+	<div class="table">
+		<h2 align="center">创建公司账号</h2>
+		<form method="post" action="__URL__/_createCompany">
+			<table>
+					<tr>
+						<td>账号：</td>
+						<td><input type="text" name="cid" class="text" /></td>
+					</tr>
+					
+					<tr>
+						<td>名称：</td>
+						<td><input type="text" name="cname" class="text"/></td>
+					</tr>
+					<tr>
+						<td>电话：</td>
+						<td><input  type="text" name="tel" class="text" /></td>
+					</tr>
+					<tr>
+						<td>邮箱：</td>
+						<td><input type="text" name="email" class="text" /></td>
+					</tr>
+					<tr>
+						<td>地址：</td>
+						<td><input type="text" name="address" class="text" /></td>
+					</tr>
+					<tr>
+						<td>网站：</td>
+						<td><input type="text" name="net_addr" class="text" /></td>
+					</tr>
+					<tr>
+						<td>类别：</td>
+						<td>
+							<select name="class">
+										<option value="互联网/IT服务" selected>互联网/IT服务</option>
+										<option value="电子商务">电子商务</option>
+										<option value="通信/硬件">通信/硬件</option>
+										<option value="计算机软件/游戏">计算机软件/游戏</option>
+										<option value="银行/金融">银行/金融</option>
+										<option value="会计/审计">会计/审计</option>
+										<option value="管理/物流">管理/物流</option>
+										<option value="出版/广告">出版/广告</option>
+										<option value="政府/机构">政府/机构</option>
+										<option value="医疗/卫生">医疗/卫生</option>
+										<option value="娱乐/服务">娱乐/服务</option>
+										<option value="科研/学校">科研/学校</option>
+							</select>
+						</td>
+					</tr>
+			</table>
+			 <br/>
+				 <br />
+				 <input type="submit" class="submit" value="提交"/> 
+		</form>
+	</div>
+
+</div>
+
+</body>
+</html>

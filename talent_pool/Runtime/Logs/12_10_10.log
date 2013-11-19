@@ -1,0 +1,187 @@
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.021530s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.084802s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run LocationTemplate Behavior [ RunTime:0.013703s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.014050s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run ParseTemplate Behavior [ RunTime:0.073699s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.074025s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run ContentReplace Behavior [ RunTime:0.013352s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run TokenBuild Behavior [ RunTime:0.003199s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.002412s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run ShowRuntime Behavior [ RunTime:0.007355s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.027213s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.028129s ]
+[ 2012-10-10T18:56:04+08:00 ] /talent_pool/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.028536s ]
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Run CheckRoute Behavior [ RunTime:0.039336s ]
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.040019s ]
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002401s ]
+[ 2012-10-10T18:56:14+08:00 ] /talent_pool/index.php/Index/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002682s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Index/login | SQL: SHOW COLUMNS FROM `enterprise` [ RunTime:0.491015s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Index/login | SQL: SELECT * FROM `enterprise` WHERE ( `eid` = 'ENT_ibm' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.063530s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run CheckRoute Behavior [ RunTime:0.002455s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.002808s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001767s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002106s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | NOTIC: [8] Undefined variable: model EnterpriseAction.class.php 第 5 行.
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `enterprise` [ RunTime:0.016873s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT * FROM `enterprise` WHERE ( `eid` = 'ENT_ibm' ) LIMIT 1   [ RunTime:0.002210s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | NOTIC: [8] Undefined index: username CommonUserAction.class.php 第 18 行.
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.074376s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'ENT_ibm' ) AND ( `unread` = 1 ) LIMIT 1   [ RunTime:0.019013s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.014570s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'ENT_ibm' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'enterprise' ) LIMIT 1   [ RunTime:0.001611s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.014959s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'ENT_ibm' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'student' ) LIMIT 1   [ RunTime:0.001474s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.033496s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'ENT_ibm' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'teacher' ) LIMIT 1   [ RunTime:0.001476s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SHOW COLUMNS FROM `message` [ RunTime:0.044083s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | SQL: SELECT COUNT(*) AS tp_count FROM `message` WHERE ( `receiver_id` = 'ENT_ibm' ) AND ( `unread` = 1 ) AND ( `sender_type` = 'company' ) LIMIT 1   [ RunTime:0.001722s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run LocationTemplate Behavior [ RunTime:0.002880s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.003164s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run ParseTemplate Behavior [ RunTime:0.052053s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.052381s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run ContentReplace Behavior [ RunTime:0.002155s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run TokenBuild Behavior [ RunTime:0.002174s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001795s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run ShowRuntime Behavior [ RunTime:0.002313s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.009453s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.005497s ]
+[ 2012-10-10T18:56:16+08:00 ] /talent_pool/index.php/Enterprise/enterprise.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.005813s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.002409s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.002756s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001884s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002212s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.001788s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.002095s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.076857s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.077170s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.001530s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.001487s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000956s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.001778s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.006516s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.004833s ]
+[ 2012-10-10T18:56:19+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.005123s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.001986s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.002274s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001426s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001652s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.001116s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.001363s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.022205s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.022561s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.001300s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.001170s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000734s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.001356s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005165s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.003416s ]
+[ 2012-10-10T18:57:01+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.003635s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.002678s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.003029s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002161s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002479s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.001745s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.002148s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.035687s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.036088s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.001579s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.003194s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001101s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.004308s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.011032s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.004650s ]
+[ 2012-10-10T18:57:03+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.004935s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.090210s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.124838s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.025581s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.025976s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.030083s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.030378s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.349206s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.349499s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.039363s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.037263s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.029832s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.036672s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.143894s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.074944s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.075309s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.002945s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.003217s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002267s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002504s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.002091s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.002337s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.026844s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.027113s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.001879s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.001669s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001025s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.001763s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.007100s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.004713s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.004955s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run CheckRoute Behavior [ RunTime:0.075029s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ route_check ] --END-- [ RunTime:0.124546s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --START--
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ReadHtmlCache Behavior [ RunTime:0.028369s ]
+[ 2012-10-10T19:50:51+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ app_begin ] --END-- [ RunTime:0.029319s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run LocationTemplate Behavior [ RunTime:0.002240s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_template ] --END-- [ RunTime:0.002525s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ParseTemplate Behavior [ RunTime:0.061909s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_parse ] --END-- [ RunTime:0.062161s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ContentReplace Behavior [ RunTime:0.001704s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run TokenBuild Behavior [ RunTime:0.001660s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001157s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowRuntime Behavior [ RunTime:0.001670s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_filter ] --END-- [ RunTime:0.006840s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --START--
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Run ShowPageTrace Behavior [ RunTime:0.004315s ]
+[ 2012-10-10T19:50:52+08:00 ] /talent_pool/index.php/Enterprise/approval | INFO: Tag[ view_end ] --END-- [ RunTime:0.004570s ]
