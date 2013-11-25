@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
     <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-    <title>公司首页</title>
+    <title>企业首页</title>
 </head>
 
 <body>
@@ -94,7 +94,7 @@
 	padding: 5px;
 	
 }
-#contentWrapper .inner form input[type=submit]{
+#contentWrapper .inner form input[type=button]{
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -106,7 +106,7 @@
 	cursor: pointer;
 	border-radius: 30px;
 }
-#contentWrapper .inner form input[type=submit]:hover{
+#contentWrapper .inner form input[type=button]:hover{
 	background-color:#09F;
 	color:white;
 }
@@ -118,7 +118,8 @@
             <p>请输入新密码:<br /><input id="new_password" name="new_password" type="password" /></p>
             <p>请再次输入新密码:<br /><input id="new_password_again" type="password" /></p>
             <br />
-            <input onclick="checkagain()" type="submit" value="更改"/>
+            <input id="check" type="button" value="更改"/>
+			<input style="display:none" id="submit" type="submit" value="更改"/>
     	</form>
     </div>
 </div>
@@ -127,11 +128,19 @@
     </div>
 </div>
 <script>
-	function checkagain(){
-		var bo = ($("#new_password").value() == $("#new_password_again").value());
-		if (!bo) alert("您两次输入的新密码不一致!");
-		return bo;
-	}
+	$(document).ready(function(){
+	$("#check").click(function(){
+		var bo = ($("#new_password").val() == $("#new_password_again").val());
+		if (!bo) 
+			alert("您两次输入的新密码不一致!");
+		var boo = ($("#new_password").val().length >= 6);
+		if (!boo) 
+			alert("请将密码设定为长度大于等于6");
+		if (bo&&boo){
+			$("#submit").click();
+		}
+	});
+	});
 </script>
 </body>
 </html>

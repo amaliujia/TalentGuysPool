@@ -39,19 +39,19 @@ margin-top:20px;
 	<div class="inner">
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/company">首页</a></span>
+            <span  ><a target="_self" href="__URL__/company">首页</a></span>
         </div>
 		<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/talent_search">人才库</a></span>
+            <span  ><a target="_self" href="__URL__/talent_search">人才库</a></span>
         </div>
         <div class="navItem">
             <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/mailbox">邮箱</a></span>
+            <span  ><a target="_self" href="__URL__/mailbox">邮箱</a></span>
         </div>
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/profile">公司档案</a></span>
+            <span  ><a target="_self" href="__URL__/profile">公司档案</a></span>
         </div>
         <div class="clear"></div>
     </div>
@@ -169,19 +169,20 @@ $(document).ready(function(){
 	//buttons
 	var page = Number($("#pagenum").html());
 	var mx = Number($("#totalpage").html());
+	var per = <?php echo ($num_perpage); ?>;
 	var objtype = "<?php echo ($objtype); ?>";
 	
 	$("#prev").click(function(){
 		page--;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else
 			page = 1;
 	});
 	$("#next").click(function(){
 		page++;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else 
 			page = mx;
 	});
@@ -189,7 +190,7 @@ $(document).ready(function(){
 		var val = Number($("#jumppage").val());
 		if (valid(val)){
 			page = val;
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		}
 	});
 });

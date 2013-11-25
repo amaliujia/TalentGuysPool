@@ -1,42 +1,83 @@
 <?php
-class EnterpriseManageModel extends ManageModel{
+/**
+ * @version 1.0
+ * @copyright SYSU_WxW
+ * @author SYSU_WxW
+ * @todo The modification and deletion of other accounts; Process for the deletion request.
+ */
+class EnterpriseManageModel extends Model{
+	/**
+	 * Function createUser() : create a new user account
+	 * 
+	 * @param string usertype
+	 * @param array user information
+	 * @return boolean create success or not
+	 */
 	public function createUser($type, $data){
 		$model = D($type);
+		$data["reg_time"] = date("Y-m-d H:i:s");
+		$data["eid"] = session("userid");
 		/*
 		$reg = $this->generateID($type, $data);
 		if (!reg)
 			return false;
 		$data[$type[0]."id"] = $reg;
 		*/
-		if (checkID($type, $data))
+		if ($this->checkID($type, $data))
 		{
 			$result = $model->add($data);
 			return $result;
 		}
 		else return false;
 	}
-	
+
+	/**
+	 * Function getUid() : get uid by a given uname.
+	 * 
+	 * @param string university name
+	 * 
+	 */
 	public function getUid($uname){
 		$mod = D("university");
 		$cond["uname"] = $uname;
 		$row = $mod->where($cond)->find();
 		return $row["uid"];
 	}
-	
+	/**
+	 * Function deleteUser() : delete a user from Database
+	 * 
+	 * @param string usertype
+	 * @param string user id
+	 * @return boolean delete success or not
+	 */
 	public function deleteUser($type, $id){
 		$model = D($type);
 		$condition[$type[0]."id"] = $id;
 		$result = $model->where($condition)->delete();
 		return $result;
 	}
-	
+	/**
+	 * Function modifyUser() : modify a user's information
+	 * 
+	 * @param string usertype
+	 * @param array user data
+	 * @return boolean modify success or not
+	 */
 	public function modifyUser($type, $data){
-		$id_name = $type[0]."id";
-		$model = D($type);
-		$condition[$id_name] = $data[$id_name];
-		$model->where($condition)->save($data);
+			$id_name = $type[0]."id";
+			$model = D($type);
+			$condition[$id_name] = $data[$id_name];
+			$model->where($condition)->save($data);
+			return true;
 	}
 	
+	/**
+	 * Function isUserExisted() : check if the given user is already existed
+	 * @access private
+	 * @param string usertype
+	 * @param string user id
+	 * @return boolean true if exist
+	 */
 	private function isUserExisted($type, $id){
 		$model = D($type);
 		$condition[$type[0]."id"] = $id;
@@ -44,7 +85,13 @@ class EnterpriseManageModel extends ManageModel{
 		if (!$result) return false;
 			else return true;
 	}
-	
+	/**
+	 * Function generateID() : auto generate the new userid
+	 * @access protected
+	 * @param string usertype
+	 * @param array user data
+	 * @return boolean true if exist
+	 */
 	protected function generateID($type, $data){
 		if ($type == "student"){
 			$id =  $data["uid"].'_'.$data["std_no"];
@@ -56,7 +103,7 @@ class EnterpriseManageModel extends ManageModel{
 			$id = $data["uid"].'_'.$data["pinyin_tname"];
 			$cnt = 0;
 			$tid = $id;
-			while (isUserExisted($type, $tid)){
+			while ($this->isUserExisted($type, $tid)){
 				$tid = $id.$cnt;
 				$cnt += 1;
 			}
@@ -65,17 +112,23 @@ class EnterpriseManageModel extends ManageModel{
 			$id = $data["uid"];
 			$cnt = 0;
 			$uid = $id;
-			while (isUserExisted($type, $uid)){
+			while ($this->isUserExisted($type, $uid)){
 				$uid = $id.$cnt;
 				$cnt += 1;
 			}
 			$id = $uid;
 		}
 		
-		if (isUserExisted($type, $id)) return false;
+		if ($this->isUserExisted($type, $id)) return false;
 			return strToLower($id);
 	}
-	
+	/**
+	 * Function checkID() : check if the given user is already existed
+	 * 
+	 * @param string usertype
+	 * @param array user data
+	 * @return boolean true if exist
+	 */
 	protected function checkID($type, $data){
 		if ($type == "student"){
 			$id =  $data["sid"];
@@ -87,7 +140,7 @@ class EnterpriseManageModel extends ManageModel{
 			$id = $data["tid"];
 			$cnt = 0;
 			$tid = $id;
-			while (isUserExisted($type, $tid)){
+			while ($this->isUserExisted($type, $tid)){
 				$tid = $id.$cnt;
 				$cnt += 1;
 			}
@@ -96,17 +149,24 @@ class EnterpriseManageModel extends ManageModel{
 			$id = $data["uid"];
 			$cnt = 0;
 			$uid = $id;
-			while (isUserExisted($type, $uid)){
+			while ($this->isUserExisted($type, $uid)){
 				$uid = $id.$cnt;
 				$cnt += 1;
 			}
 			$id = $uid;
 		}
 		
-		if (isUserExisted($type, $id)) return false;
+		if ($this->isUserExisted($type, $id)) return false;
 			return $id;
 	}
 	
+	/**
+	 * Function readUser() : read user's information from Database
+	 * 
+	 * @param string usertype
+	 * @param string user id
+	 * @return array user information
+	 */
 	public function readUser($type, $id){
 		$model = D($type);
 		$condition[$type[0]."id"] = $id;
@@ -122,20 +182,35 @@ class EnterpriseManageModel extends ManageModel{
 		}
 		return $arr;
 	}
-	
+	/**
+	 * Function readAllTemp() : read all the student data in the temporary pool.
+	 * 
+	 * @return array all the temp_student information
+	 * 
+	 */
 	public function readAllTemp(){
 		$model = D("temp_student");
 		$result = $model->where($cond)->order("status DESC")->select();
 		return $result;
 	}
-	
+	/**
+	 * Function readTemp() : read a student data in the temporary pool by a given id.
+	 * 
+	 * @return array the corresponding temp_student information
+	 * @param string temp_student id
+	 */
 	public function readTemp($id){
 		$model = D("temp_student");
 		$cond["sid"] = $id;
 		$result = $model->where($cond)->find();
 		return $result;
 	}
-	
+	/**
+	 * Function rejectTemp() : reject a request from temporary pool.
+	 * 
+	 * @param string remp_student id
+	 * @param string reject reason
+	 */
 	public function rejectTemp($id, $reason){
 		$model = D("temp_student");
 		$cond["sid"] = $id;
@@ -145,7 +220,12 @@ class EnterpriseManageModel extends ManageModel{
 		$result = $model->where($cond)->save($data);
 		return $result;
 	}
-	
+	/**
+	 * Function passTemp() : accept a request from temporary pool.
+	 * 
+	 * @param string remp_student id
+	 * 
+	 */
 	public function passTemp($id){
 		$model = D("temp_student");
 		$cond["sid"] = $id;

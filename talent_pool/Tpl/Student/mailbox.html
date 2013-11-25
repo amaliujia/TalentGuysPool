@@ -1,4 +1,4 @@
-<include file="Teacher:header" />
+<include file="Student:header" />
 <link rel="stylesheet" href="__PUBLIC__/css/mailbox.css" /> 
 <div class="wrapper" id="contentWrapper">
 	<div class="inner">
@@ -7,7 +7,9 @@
                 <h3>写信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
                  <ul>
                     <li><a href="__URL__/sendEmail/objtype/teacher">向老师发送信息</a></li>
+                   <!-- href="__URL__/sendEmail/objtype/teacher-->
                     <li><a href="__URL__/sendEmail/objtype/enterprise">向企业发送信息</a></li>
+                    <!--__URL__/sendEmail/objtype/enterprise-->
                 </ul>
                 <br /><br />
                 <h3>收信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
@@ -108,19 +110,20 @@ $(document).ready(function(){
 	//buttons
 	var page = Number($("#pagenum").html());
 	var mx = Number($("#totalpage").html());
+	var per = {$num_perpage};
 	var objtype = "{$objtype}";
 	
 	$("#prev").click(function(){
 		page--;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else
 			page = 1;
 	});
 	$("#next").click(function(){
 		page++;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else 
 			page = mx;
 	});
@@ -128,7 +131,7 @@ $(document).ready(function(){
 		var val = Number($("#jumppage").val());
 		if (valid(val)){
 			page = val;
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		}
 	});
 });

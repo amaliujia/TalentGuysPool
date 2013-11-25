@@ -39,19 +39,19 @@ margin-top:20px;
 	<div class="inner">
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/company">首页</a></span>
+            <span  ><a target="_self" href="__URL__/company">首页</a></span>
         </div>
 		<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/talent_search">人才库</a></span>
+            <span  ><a target="_self" href="__URL__/talent_search">人才库</a></span>
         </div>
         <div class="navItem">
             <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/mailbox">邮箱</a></span>
+            <span  ><a target="_self" href="__URL__/mailbox">邮箱</a></span>
         </div>
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/profile">公司档案</a></span>
+            <span  ><a target="_self" href="__URL__/profile">公司档案</a></span>
         </div>
         <div class="clear"></div>
     </div>
@@ -130,7 +130,7 @@ color: white;
 	line-height: 30px;
 }
 #StudentList .listItem:nth-child(2n+1){
-	background: #D3EEF7;
+	background:#F3F3F3;
 }
 .clear{
 	clear:both;

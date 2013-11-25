@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class MailboxModel</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class MailboxModel</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">author:</span> SYSU_WxW</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> SYSU_WxW</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Model---MailboxModel.class.php.html">/Model/MailboxModel.class.php</a> (line <span class="field">8</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																				
+												<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getCompanies" title="details" class="method-name">getCompanies</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getEnterprise" title="details" class="method-name">getEnterprise</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getPageMsg" title="details" class="method-name">getPageMsg</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$objtype</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$page</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num_perpage</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getStatRcvMsg" title="details" class="method-name">getStatRcvMsg</a>
+											([<span class="var-type">sender's</span>&nbsp;<span class="var-name">$objtype</span> = <span class="var-default">&quot;all&quot;</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getStudents" title="details" class="method-name">getStudents</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getTeachers" title="details" class="method-name">getTeachers</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getTotalPage" title="details" class="method-name">getTotalPage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$objtype</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num_perpage</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#sendMsg" title="details" class="method-name">sendMsg</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#sendMsgN" title="details" class="method-name">sendMsgN</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$rcv_id_list</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#showMsg" title="details" class="method-name">showMsg</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg_id</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodgetCompanies" id="getCompanies"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCompanies</span> (line <span class="line-number">197</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getCompanies() : search specific company name by a keyword</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the list of search result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getCompanies
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: keyword to filter the users</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetEnterprise" id="getEnterprise"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEnterprise</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getEnterprise() : search specific enterprise name by a keyword</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the list of search result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getEnterprise
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: keyword to filter the users</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPageMsg" id="getPageMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPageMsg</span> (line <span class="line-number">34</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getPageMsg() : get the message to show on the page.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> message list</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getPageMsg
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$objtype</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$page</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num_perpage</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$objtype</span><span class="var-description">: define the msg_sender's usertype</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$page</span><span class="var-description">: the page of message now</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$num_perpage</span><span class="var-description">: the amount of message on per page.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStatRcvMsg" id="getStatRcvMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStatRcvMsg</span> (line <span class="line-number">14</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getStatRcvMsg(): count the amount of unread message</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the amount of unread message sended by a certain usertype of users.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getStatRcvMsg
+		</span>
+					([<span class="var-type">sender's</span>&nbsp;<span class="var-name">$objtype</span> = <span class="var-default">&quot;all&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">sender's</span>
+				<span class="var-name">$objtype</span><span class="var-description">: usertype</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStudents" id="getStudents"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStudents</span> (line <span class="line-number">120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getStudents() : search specific student name by a keyword</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the list of search result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getStudents
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: keyword to filter the users</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTeachers" id="getTeachers"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTeachers</span> (line <span class="line-number">147</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getTeachers() : search specific teacher name by a keyword</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the list of search result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getTeachers
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: keyword to filter the users</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTotalPage" id="getTotalPage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTotalPage</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function getTotalPage() : get the amount of pages.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> total amount of the pages</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getTotalPage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$objtype</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num_perpage</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$objtype</span><span class="var-description">: define the msg_sender's usertype</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$num_perpage</span><span class="var-description">: the amount of message on per page.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsendMsg" id="sendMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendMsg</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function sendMsg() : the action of sending a message.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sendMsg
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$data</span><span class="var-description">: message data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsendMsgN" id="sendMsgN"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendMsgN</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function sendMsgN() : send a piece of message to multi-people.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sendMsgN
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$rcv_id_list</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$rcv_id_list</span><span class="var-description">: the list of receivers' id</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: message title</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$content</span><span class="var-description">: message content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshowMsg" id="showMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">showMsg</span> (line <span class="line-number">80</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function showMsg() : get the detail of a piece of message.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> details of the certain message</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			showMsg
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg_id</span><span class="var-description">: message id</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 13 Oct 2012 06:38:39 +0000 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
 <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-<title>教师页面</title>
+<title>公司首页</title>
 </head>
 
 <body>
@@ -19,10 +19,10 @@ margin-top:20px;
 </style>
 <div class="wrapper" id="headerWrapper">
 	<div class="inner" style="height:67px;">
-    	 <div id="Uname" class="f"><img src=" __PUBLIC__/img/IBM.jpg " width="140"/></div>
+    	 <div id="Uname" class="f" style="text-align: center; padding-top: 20px;"><?php echo ($username); ?></div>
          <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__ROOT__/" title="" target="_blank">登出</a></span>
+            <span  ><a href="__ROOT__/" title="" target="_self">登出</a></span>
         </div>
         <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
@@ -30,7 +30,7 @@ margin-top:20px;
         </div>
         <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/profile" title="" target="_blank">修改基本资料</a></span>
+            <span  ><a href="__URL__/edit_profile" title="" target="_self">修改基本资料</a></span>
         </div>
     <div class="clear"></div>
     </div>
@@ -39,19 +39,19 @@ margin-top:20px;
 	<div class="inner">
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/company">首页</a></span>
+            <span  ><a target="_self" href="__URL__/company">首页</a></span>
         </div>
 		<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/talent_search">人才库</a></span>
+            <span  ><a target="_self" href="__URL__/talent_search">人才库</a></span>
         </div>
         <div class="navItem">
             <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/mailbox">邮箱</a></span>
+            <span  ><a target="_self" href="__URL__/mailbox">邮箱</a></span>
         </div>
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/profile">公司档案</a></span>
+            <span  ><a target="_self" href="__URL__/profile">公司档案</a></span>
         </div>
         <div class="clear"></div>
     </div>

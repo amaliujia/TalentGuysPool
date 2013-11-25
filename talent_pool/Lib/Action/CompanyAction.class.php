@@ -1,20 +1,30 @@
 <?php
-/*Company*/
+/**
+ * @version 1.0
+ * @copyright SYSU_WxW
+ * @author SYSU_WxW
+ * @description The action of user company.
+ * @todo The filter function of choosing talents is uncompleted; The auto-email module that can send message and email the chosen students automatically.
+ */
 class CompanyAction extends CommonUserAction{
-	//show index page
+	/**
+	 * Function company() : the index page of company user.
+	 * 
+	 * @access public
+	 * 
+	 */
 	public function company(){
 		$this->init("company");
 		$this->basic_mailbox();
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-
-	public function header(){
-
-		$this->assign("username", session("username"));
-		$this->display();
-	}
-
+	/**
+	 * Function talent_search() : search talents for the company by some special filters.
+	 * 
+	 * @access public
+	 * @param array the certain conditions of the filter
+	 */
 	public function talent_search(){
 		$filter = array();
 
@@ -34,13 +44,12 @@ class CompanyAction extends CommonUserAction{
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-	
-	public function mailbox(){
-		$this->basic_mailbox();
-		$this->assign("username", session("username"));
-		$this->display();
-	}
-
+	/**
+	 * Function sendEmail() : the controller of template sendEmail.html.
+	 * 
+	 * @access public
+	 * @param string the receiver's usertype
+	 */
 	public function sendEmail(){
 		if (!isset($_GET["objtype"]))
 			$objtype = "enterprise";
@@ -52,7 +61,12 @@ class CompanyAction extends CommonUserAction{
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-
+	/**
+	 * Function _unset(): clear some unuseful and unsafe information after reading data from Database.
+	 * 
+	 * @access private
+	 * @return array the data after filtering unsafe information
+	 */
 	private function _unset($arr){
 		$i = 0;
 		while(isset($arr[$i])){
@@ -68,7 +82,12 @@ class CompanyAction extends CommonUserAction{
 		}
 		return $arr;
 	}
-	
+	/**
+	 * Function _filter(): read students from Database and filter them.
+	 * 
+	 * @access private
+	 * @return array the list of students who suit the conditions
+	 */
 	private function _filter($filter){
 		if ($filter == ""){
 			$model = D("student");

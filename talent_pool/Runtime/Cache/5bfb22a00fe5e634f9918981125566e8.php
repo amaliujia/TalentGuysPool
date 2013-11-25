@@ -19,15 +19,15 @@
 				<div id="Uname" class="f"><?php echo ($username); ?></div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__ROOT__/" title="" target="_blank">登出</a></span>
+					<span><a href="__ROOT__/" title="" target="_self">登出</a></span>
 				</div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/change_password" title="" target="_blank">修改密码</a></span>
+					<span  ><a href="__URL__/change_password" title="" target="_self">修改密码</a></span>
 				</div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/edit_profile" title="" target="_blank">修改基本资料</a></span>
+					<span  ><a href="__URL__/edit_profile" title="" target="_self">修改基本资料</a></span>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -36,15 +36,15 @@
 			<div class="inner">
 				<div class="navItem">
 					<span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/teacher.html">首页</a></span>
+					<span  ><a target="_self" href="__URL__/teacher.html">首页</a></span>
 				</div>
 				<div class="navItem">
 					<span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/mailbox.html">邮箱</a></span>
+					<span  ><a target="_self" href="__URL__/mailbox.html">邮箱</a></span>
 				</div>
 				<div class="navItem">
 					<span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/profile">个人档案</a></span>
+					<span  ><a target="_self" href="__URL__/profile">个人档案</a></span>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -66,7 +66,7 @@
                 <h3>收信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
                <ul>
                    <li><a href="__URL__/mailbox">所有信息</a><label><?php echo ($stat_msg); ?></label> </li>
-                    <li><a href="__URL__/mailbox/objtype/enterprise">企业信息</a> <label><?php echo ($stat_sys_msg); ?></label></li>
+                    <li><a href="__URL__/mailbox/objtype/enterprise">企业信息</a> <label><?php echo ($stat_ent_msg); ?></label></li>
                     <li><a href="__URL__/mailbox/objtype/student">学生信息</a> <label><?php echo ($stat_std_msg); ?></label></li>
                 </ul>
             </div>
@@ -120,7 +120,6 @@ MailEntry = (function(){
 	
 	MailEntry.prototype.build = function(color){
 		var tr = $("<tr></tr>");
-		tr.css("background-color", color);
 		tr.append($("<td name=\"maillist[]\"><input type=\"checkbox\" /></td>"));
 		tr.append("<td delta-id=\"" + this.sender_id + "\">"+this.sender_name+"</td>");
 		tr.append("<td><a href=\"__URL__/message/msgid/" + this.msgid + "\">" + this.title + "</a></td>");
@@ -160,19 +159,20 @@ $(document).ready(function(){
 	//buttons
 	var page = Number($("#pagenum").html());
 	var mx = Number($("#totalpage").html());
+	var per = <?php echo ($num_perpage); ?>;
 	var objtype = "<?php echo ($objtype); ?>";
 	
 	$("#prev").click(function(){
 		page--;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else
 			page = 1;
 	});
 	$("#next").click(function(){
 		page++;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else 
 			page = mx;
 	});
@@ -180,7 +180,7 @@ $(document).ready(function(){
 		var val = Number($("#jumppage").val());
 		if (valid(val)){
 			page = val;
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		}
 	});
 });

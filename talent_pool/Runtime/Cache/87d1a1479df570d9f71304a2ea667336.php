@@ -4,52 +4,61 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
 <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-<title>教师页面</title>
+<title>公司首页</title>
 </head>
 
 <body>
 <div class="wrapper" id="TheadWrapper">
 	<div class="inner">
-    	<div id="logo">企业大学人才库</div>
     </div>
 </div>
-
+<style>
+.UctrlItem{
+margin-top:20px;
+}
+</style>
 <div class="wrapper" id="headerWrapper">
-	<div class="inner">
-    	<div id="Uname" class="f"> <?php echo ($username); ?> </div>
+	<div class="inner" style="height:67px;">
+    	 <div id="Uname" class="f" style="text-align: center; padding-top: 20px;"><?php echo ($username); ?></div>
          <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  >登出</span>
+            <span  ><a href="__ROOT__/" title="" target="_self">登出</a></span>
         </div>
         <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-            <span  >修改密码</span>
+            <span  ><a href="__URL__/change_password" title="" target="_blank">修改密码</a></span>
         </div>
         <div class="UctrlItem">
             <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-            <span  >修改基本资料</span>
+            <span  ><a href="__URL__/edit_profile" title="" target="_self">修改基本资料</a></span>
         </div>
     <div class="clear"></div>
     </div>
 </div>
-
 <div class="wrapper" id="NavWrapper">
 	<div class="inner">
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/company">首页</a></span>
+            <span  ><a target="_self" href="__URL__/company">首页</a></span>
+        </div>
+		<div class="navItem">
+            <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a target="_self" href="__URL__/talent_search">人才库</a></span>
         </div>
         <div class="navItem">
             <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/mailbox">邮箱</a></span>
+            <span  ><a target="_self" href="__URL__/mailbox">邮箱</a></span>
         </div>
     	<div class="navItem">
             <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-            <span  ><a href="__URL__/profile">个人档案</a></span>
+            <span  ><a target="_self" href="__URL__/profile">公司档案</a></span>
         </div>
         <div class="clear"></div>
     </div>
 </div>
+<br /> 
+ 
+
 <br /> 
 <style>
 #contentWrapper{
@@ -85,7 +94,7 @@
 	padding: 5px;
 	
 }
-#contentWrapper .inner form input[type=submit]{
+#contentWrapper .inner form input[type=button]{
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -97,7 +106,7 @@
 	cursor: pointer;
 	border-radius: 30px;
 }
-#contentWrapper .inner form input[type=submit]:hover{
+#contentWrapper .inner form input[type=button]:hover{
 	background-color:#09F;
 	color:white;
 }
@@ -109,7 +118,8 @@
             <p>请输入新密码:<br /><input id="new_password" name="new_password" type="password" /></p>
             <p>请再次输入新密码:<br /><input id="new_password_again" type="password" /></p>
             <br />
-            <input onclick="checkagain()" type="submit" value="更改"/>
+            <input id="check" type="button" value="更改"/>
+			<input style="display:none" id="submit" type="submit" value="更改"/>
     	</form>
     </div>
 </div>
@@ -118,11 +128,19 @@
     </div>
 </div>
 <script>
-	function checkagain(){
-		var bo = ($("#new_password").value() == $("#new_password_again").value());
-		if (!bo) alert("您两次输入的新密码不一致!");
-		return bo;
-	}
+	$(document).ready(function(){
+	$("#check").click(function(){
+		var bo = ($("#new_password").val() == $("#new_password_again").val());
+		if (!bo) 
+			alert("您两次输入的新密码不一致!");
+		var boo = ($("#new_password").val().length >= 6);
+		if (!boo) 
+			alert("请将密码设定为长度大于等于6");
+		if (bo&&boo){
+			$("#submit").click();
+		}
+	});
+	});
 </script>
 </body>
 </html>

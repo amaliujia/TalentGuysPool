@@ -19,15 +19,15 @@
 				<div id="Uname" class="f"><?php echo ($username); ?></div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__ROOT__/" title="" target="_blank">登出</a></span>
+					<span  ><a href="__ROOT__/" title="" target="_self">登出</a></span>
 				</div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/change_password" title="" target="_blank">修改密码</a></span>
+					<span  ><a href="__URL__/change_password" title="" target="_self">修改密码</a></span>
 				</div>
 				<div class="UctrlItem">
 					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/edit_profile" title="" target="_blank">修改基本资料</a></span>
+					<span  ><a href="__URL__/edit_profile" title="" target="_self">修改基本资料</a></span>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -204,7 +204,7 @@
 				
 				
 					<div id="scores">
-					<h2 align="center">荣誉</h2>
+					<h2 align="center">在校成绩</h2>
 						<table>
 							<tr>
 								<td>
@@ -269,7 +269,8 @@
 					<br class="position"/>
 					<br />
                     <div style="text-align:center;">
-					<input type="submit">
+					<input style="display:none" id="final_submit" type="submit">
+					<input id="submit" type="button" value="提交">
                     </div>
 				</form>
 			</div>
@@ -286,6 +287,23 @@ $(document).ready(function(){
 	$("input:checkbox").each(function(){
 		var content = $(this).parent().text(); 
 		$(this).val(content);
+	});
+	
+	$("#submit").click(function(){
+		var submit = true;
+		$("td>input").each(function(){
+			if ($(this).attr("type") == "checkbox")
+				return;
+			if (!submit) return;
+			if ($(this).val() == "")
+			{
+				alert("请将信息填写完整再提交！请留意基本信息与在校成绩模块。");
+				submit = false;
+				return;
+			}
+		});
+		if (submit)
+			$("#final_submit").click();
 	});
 });
 </script>

@@ -1,18 +1,34 @@
 ﻿<?php
-// 本类由系统自动生成，仅供测试用途
+/**
+ * @version 1.0
+ * @copyright SYSU_WxW
+ * @author SYSU_WxW
+ * @description Index page & Login part
+ */
 class IndexAction extends Action {
 
-	//show index page
+	/**
+	 * Function index() : the controller of template index.html.
+	 * Show the index login page. 
+	 *
+	 * @access public
+	 * 
+	 */
     public function index(){
-		$this->clearSession();
+		$this->_clearSession();
      	$this->display();
     }
-	
-	private function clearSession(){
+	/**
+	 * Function _clearSession() : clear the session while entering the index page.
+	 *
+	 * @access private
+	 * 
+	 */
+	private function _clearSession(){
 		session(null);
 	}
 	
-	//DEBUG
+	/*/DEBUG
 	//test session
 	public function session(){
 		// 由于直接在操作里输出，为避免乱码
@@ -24,8 +40,13 @@ class IndexAction extends Action {
 			echo 'session 未注册';
 		}
 	}
-	//END DEBUG
-	
+	//END DEBUG*/
+	/**
+	 * Function gotoUserpage() : jump to corresponding user page by juding the usretype
+	 *
+	 * @access private
+	 * @param string usertype of the user
+	 */
 	private function gotoUserpage($usertype){
 		$modul = $usertype;
 		$modul[0] = strToUpper($modul[0]);
@@ -34,7 +55,15 @@ class IndexAction extends Action {
 		header("Location: ".$jumpUrl);
 	}
 	
-	//连接数据库进行用户登录，若不存在用户或密码错误则返回false
+	/**
+	 * Function linkDB() : link Databse to login and get the user information
+	 *
+	 * @access private
+	 * @param string usertype of the user
+	 * @param string login id input by user
+	 * @param string login password by user
+	 * @return array the user information, if login error then return false
+	 */
 	private function linkDB($usertype, $userid, $passwd){
 		$letter = $usertype[0];
 		$model = D($usertype);
@@ -47,8 +76,17 @@ class IndexAction extends Action {
 		return $row;
 	}
 	
-	//login handle function
+	/**
+	 * Function login() : login handle function
+	 * determine the usertype
+	 *
+	 * @access public
+	 * @param string login id by user
+	 * @param string login password input by user
+	 */
 	public function login(){
+		if (!isset($_POST["username"]))
+			$this->redirect("_ROOT_");
 		$userid = $_POST["username"];
 		$passwd = md5($_POST["password"]);
 		

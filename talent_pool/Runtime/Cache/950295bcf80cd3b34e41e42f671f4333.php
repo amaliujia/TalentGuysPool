@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
     <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-    <title>公司首页</title>
+    <title>企业首页</title>
 </head>
 
 <body>
@@ -103,10 +103,29 @@
 			</table>
 			 <br/>
 				 <br />
-				 <input type="submit" class="submit" value="提交"/> 
+				  <input type="button" id="submit" class="submit" value="提交"/> 
+				 <input type="submit" style="display:none" id="final_submit"/>
 		</form>
 	</div>
 
 </div>
+<script>
+$(document).ready(function(){
+	$("#submit").click(function(){
+		var submit = true;
+		$("td>input").each(function(){
+			if (!submit) return;
+			if ($(this).val() == "")
+			{
+				alert("请将信息填写完整再提交！");
+				submit = false;
+				return;
+			}
+		});
+		if (submit)
+			$("#final_submit").click();
+	});
+});
+</script>
 </body>
 </html>

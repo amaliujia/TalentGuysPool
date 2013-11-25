@@ -1,5 +1,18 @@
 <?php
+/**
+ * @version 1.0
+ * @copyright SYSU_WxW
+ * @author SYSU_WxW
+ * @description The action of user teacher.
+ * @todo a teacher delete student in pool cannot be satisfied now.
+ */
 class TeacherAction extends CommonUserAction{
+	/**
+	 * Function teacher() : the index page of teacher user.
+	 * 
+	 * @access public
+	 * 
+	 */
 	public function teacher(){
 		$this->init("teacher");
 		$this->basic_mailbox();
@@ -7,6 +20,12 @@ class TeacherAction extends CommonUserAction{
 		$this->display();
 	}	
 
+	/**
+	 * Function sendEmail() : the controller of template sendEmail.html.
+	 * 
+	 * @access public
+	 * @param string the receiver's usertype
+	 */
 	public function sendEmail(){
 		if (!isset($_GET["objtype"]))
 			$objtype = "student";
@@ -18,7 +37,13 @@ class TeacherAction extends CommonUserAction{
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-
+	/**
+	 * Function manage_page() : the controller of template manage_page.html.
+	 * The page for teacher's managing students.
+	 *
+	 * @access public
+	 * @param string the type of student. Enum{pool, temp}
+	 */
 	public function manage_page(){
 		if (!isset($_GET["type"]))
 			$type = 'pool';
@@ -53,13 +78,19 @@ class TeacherAction extends CommonUserAction{
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-
+	/**
+	 * Function delete_temp_student() : teacher can directly delete the temp profile of his/her own student, as the temp profile is created by this teacher.
+	 * 
+	 * @access public
+	 * 
+	 * @param string the temp_student id
+	 */
 	public function delete_temp_student(){
 		function _del($sid, $dbname){
-		$model = D($dbname);
-		$cond["sid"] = $sid;
-		$model->where($cond)->delete();
-	}
+			$model = D($dbname);
+			$cond["sid"] = $sid;
+			$model->where($cond)->delete();
+		}
 		try{
 			$this->assign("jumpUrl", "__URL__/manage_page/type/temp");
 			
@@ -75,7 +106,13 @@ class TeacherAction extends CommonUserAction{
 		}
 		$this->success("删除请求已发送！请耐心等待企业管理员进行审批确认以正式删除！");
 	}
-	
+	/**
+	 * Function delete_student() : teacher propose a request to enterprise manager about deleting a student in pool.
+	 * 
+	 * @access public
+	 * @param string the student id
+	 * @todo This is uncompleted.
+	 */
 	public function delete_student(){
 	/*	function _mov($sid, $dbname){
 			$model1 = D($dbname);
@@ -99,7 +136,7 @@ class TeacherAction extends CommonUserAction{
 			$data["status"] = 3;
 			unset($data["password"]);
 			unset($data["reg_time"]);
-			$data["temp_reg_time"] = date("YY-mm-dd");
+			$data["temp_reg_time"] = date("Y-m-d H:i:s");
 			$result = $model->add($data);
 			
 		}
@@ -109,7 +146,13 @@ class TeacherAction extends CommonUserAction{
 
 		$this->success("删除请求已发送！请耐心等待企业管理员进行审批确认以正式删除！");
 	}
-
+	/**
+	 * Function modify_student() : teacher propose a request to enterprise manager about modifying a student in pool.
+	 * This is the page of modify_student.html
+	 * @access public
+	 * @param string the student id
+	 * 
+	 */
 	public function modify_student(){
 		try{
 			if (!isset($_GET["sid"]))
@@ -150,7 +193,13 @@ class TeacherAction extends CommonUserAction{
 		}
 		$this->display();
 	}
-
+	/**
+	 * Function modify_student() : teacher propose a request to enterprise manager about modifying a student in pool.
+	 * This is the action of modify_student.html
+	 * @access public
+	 *
+	 * 
+	 */
 	public function _modify_student(){
 
 		//submit basic student info
@@ -196,40 +245,25 @@ class TeacherAction extends CommonUserAction{
 		$this->assign("jumpUrl", "__URL__/manage_page");
 		$this->success("您的学生入库请求已提交，请耐心等候企业审批。");
 	}
-
-	public function temp_page(){
-		$model = D("temp_student");
-		$condition["tid"] = session("userid");
-		$arr = $model->where($condition)->select();
-
-		$i = 0;
-		while(isset($arr[$i])){
-
-			$x = $arr[$i]["status"];
-			if ($x == -1)
-				$arr[$i]["status"] = "拒绝";
-			elseif ($x == 1)
-				$arr[$i]["status"] = "创建";
-			elseif ($x == 2)
-				$arr[$i]["status"] = "修改";
-
-
-			$i += 1;
-		}
-
-		$json = json_encode($arr);
-
-		$this->assign("getJson", $json);
-		$this->assign("username", session("username"));
-		$this->display();
-
-	}
-
+	
+	/**
+	 * Function recommandStudent() : teacher can recommand a student to enter the talent_pool.
+	 * This is the page of recommandStudent.html
+	 * @access public
+	 * 
+	 * 
+	 */
 	public function recommandStudent(){
 		$this->assign("username", session("username"));
 		$this->display();
 	}
-
+	/**
+	 * Function recommandNow() : the action of recommanding a student.
+	 * 
+	 * @access public
+	 * 
+	 * 
+	 */
 	public function recommandNow(){
 		//submit basic student info
 		date_default_timezone_set ("Asia/Shanghai");  

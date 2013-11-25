@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
     <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-    <title>公司首页</title>
+    <title>企业首页</title>
 </head>
 
 <body>

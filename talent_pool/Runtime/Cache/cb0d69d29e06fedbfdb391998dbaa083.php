@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
     <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-    <title>公司首页</title>
+    <title>企业首页</title>
 </head>
 
 <body>
@@ -58,4 +58,4 @@
 </div>
 <br />
 
- <link  rel="stylesheet" href="__PUBLIC__/css/enterprise.css" type="text/css"/><div class="container" >	<div class="table">		<h2 align="center">新建合作学信息</h2>		<form method="post" action="__URL__/_createUniversity">			<table>					<tr>						<td>学校英文缩写名：</td>						<td><input type="text" name="uid" class="text" /></td>					</tr>										<tr>						<td>学校全名：</td>						<td><input type="text" name="uname" class="text"/></td>					</tr>			</table>			 <br/>				 <br />				 <input type="submit" class="submit" value="提交"/> 		</form>	</div></div></body></html>
+ <link  rel="stylesheet" href="__PUBLIC__/css/enterprise.css" type="text/css"/><div class="container" >	<div class="table">		<h2 align="center">新建合作学信息</h2>		<form method="post" action="__URL__/_createUniversity">			<table>					<tr>						<td>学校英文缩写名：</td>						<td><input type="text" name="uid" class="text" /></td>					</tr>										<tr>						<td>学校全名：</td>						<td><input type="text" name="uname" class="text"/></td>					</tr>			</table>			 <br/>				 <br />				 <input type="button" id="submit" class="submit" value="提交"/> 				 <input type="submit" style="display:none" id="final_submit"/>		</form>	</div></div><script>$(document).ready(function(){	$("#submit").click(function(){		var submit = true;		$("td>input").each(function(){			if (!submit) return;			if ($(this).val() == "")			{				alert("请将信息填写完整再提交！");				submit = false;				return;			}		});		if (submit)			$("#final_submit").click();	});});</script></body></html>

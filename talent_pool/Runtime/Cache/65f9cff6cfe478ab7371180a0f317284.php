@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
     <script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-    <title>公司首页</title>
+    <title>企业首页</title>
 </head>
 
 <body>
@@ -66,8 +66,8 @@
 		<form method="post" action="__URL__/_createCompany">
 			<table>
 					<tr>
-						<td>账号：</td>
-						<td><input type="text" name="cid" class="text" /></td>
+						<td>账号ID：</td>
+						<td>COM_<input id="name" type="text" name="cid" class="text" /></td>
 					</tr>
 					
 					<tr>
@@ -97,7 +97,6 @@
 										<option value="互联网/IT服务" selected>互联网/IT服务</option>
 										<option value="电子商务">电子商务</option>
 										<option value="通信/硬件">通信/硬件</option>
-										<option value="计算机软件/游戏">计算机软件/游戏</option>
 										<option value="银行/金融">银行/金融</option>
 										<option value="会计/审计">会计/审计</option>
 										<option value="管理/物流">管理/物流</option>
@@ -112,11 +111,29 @@
 			</table>
 			 <br/>
 				 <br />
-				 <input type="submit" class="submit" value="提交"/> 
+				 <input type="button" id="submit" class="submit" value="提交"/> 
+				 <input type="submit" style="display:none" id="final_submit"/>
 		</form>
 	</div>
 
 </div>
-
+<script>
+$(document).ready(function(){
+	$("#submit").click(function(){
+		var submit = true;
+		$("td>input").each(function(){
+			if (!submit) return;
+			if ($(this).val() == "")
+			{
+				alert("请将信息填写完整再提交！");
+				submit = false;
+				return;
+			}
+		});
+		if (submit)
+			$("#final_submit").click();
+	});
+});
+</script>
 </body>
 </html>

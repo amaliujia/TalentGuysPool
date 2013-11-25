@@ -1,57 +1,62 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
-		<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
-		<title>教师页面</title>
-	</head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/struct.css" />
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js"></script>
+<title>学生页面</title>
+</head>
 
-	<body>
-		<div class="wrapper" id="TheadWrapper">
-			<div class="inner">
-				<div id="logo">企业大学人才库</div>
-			</div>
-		</div>
+<body>
+<div class="wrapper" id="TheadWrapper">
+	<div class="inner">
+    	<div id="logo">企业大学人才库</div>
+    </div>
+</div>
 
-		<div class="wrapper" id="headerWrapper">
-			<div class="inner">
-				<div id="Uname" class="f"><?php echo ($username); ?></div>
-				<div class="UctrlItem">
-					<span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__ROOT__/" title="" target="_blank">登出</a></span>
-				</div>
-				<div class="UctrlItem">
-					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/change_password" title="" target="_blank">修改密码</a></span>
-				</div>
-				<div class="UctrlItem">
-					<span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/edit_profile" title="" target="_blank">修改基本资料</a></span>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<div class="wrapper" id="NavWrapper">
-			<div class="inner">
-				<div class="navItem">
-					<span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/teacher.html">首页</a></span>
-				</div>
-				<div class="navItem">
-					<span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/mailbox.html">邮箱</a></span>
-				</div>
-				<div class="navItem">
-					<span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
-					<span  ><a href="__URL__/profile">个人档案</a></span>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-		<br /> 
+<div class="wrapper" id="headerWrapper">
+	<div class="inner">
+    	<div id="Uname" class="f"> <?php echo ($username); ?> </div>
+         <div class="UctrlItem">
+            <span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span id="logout">登出</span>
+        </div>
+        <div class="UctrlItem">
+            <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
+            <span id="change_password">修改密码</span>
+        </div>
 
+    <div class="clear"></div>
+    </div>
+</div>
 
+<div class="wrapper" id="NavWrapper">
+	<div class="inner">
+    	<div class="navItem">
+            <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/student" target="_self">首页</a></span>
+        </div>
+        <div class="navItem">
+            <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/mailbox" target="_self">邮箱</a></span>
+        </div>
+    	<div class="navItem">
+            <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/student" target="_self">个人档案</a></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+		<script>
+			$(document).ready(function(){
+				$("#logout").click(function(){
+					window.location.href="__ROOT__";
+				});
+				$("#change_password").click(function(){
+					window.location.href="__URL__/change_password";
+				});
+			});
+		</script>
 <link rel="stylesheet" href="__PUBLIC__/css/mailbox.css" /> 
 <div class="wrapper" id="contentWrapper">
 	<div class="inner">
@@ -60,7 +65,9 @@
                 <h3>写信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
                  <ul>
                     <li><a href="__URL__/sendEmail/objtype/teacher">向老师发送信息</a></li>
+                   <!-- href="__URL__/sendEmail/objtype/teacher-->
                     <li><a href="__URL__/sendEmail/objtype/enterprise">向企业发送信息</a></li>
+                    <!--__URL__/sendEmail/objtype/enterprise-->
                 </ul>
                 <br /><br />
                 <h3>收信<img  src="__PUBLIC__/img/sidebar-arrow.png"  style="position:absolute; right:-9px; top:0px; " /></h3>
@@ -161,19 +168,20 @@ $(document).ready(function(){
 	//buttons
 	var page = Number($("#pagenum").html());
 	var mx = Number($("#totalpage").html());
+	var per = <?php echo ($num_perpage); ?>;
 	var objtype = "<?php echo ($objtype); ?>";
 	
 	$("#prev").click(function(){
 		page--;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else
 			page = 1;
 	});
 	$("#next").click(function(){
 		page++;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else 
 			page = mx;
 	});
@@ -181,7 +189,7 @@ $(document).ready(function(){
 		var val = Number($("#jumppage").val());
 		if (valid(val)){
 			page = val;
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		}
 	});
 });

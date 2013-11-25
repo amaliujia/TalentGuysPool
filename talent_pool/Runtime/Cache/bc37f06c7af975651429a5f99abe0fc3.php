@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,10 +8,55 @@
 </head>
 
 <body>
-<div class="wrapper" id="TheadWrapper" style="position:relative;">
+<div class="wrapper" id="TheadWrapper">
 	<div class="inner">
+    	<div id="logo">企业大学人才库</div>
     </div>
 </div>
+
+<div class="wrapper" id="headerWrapper">
+	<div class="inner">
+    	<div id="Uname" class="f"> <?php echo ($username); ?> </div>
+         <div class="UctrlItem">
+            <span><img src="__PUBLIC__/img/settingUserLogin.png"  width="23"  height="21" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span id="logout">登出</span>
+        </div>
+        <div class="UctrlItem">
+            <span><img src="__PUBLIC__/img/setting.png" width="23"  style="vertical-align:middle;"/></span>&nbsp;&nbsp;
+            <span id="change_password">修改密码</span>
+        </div>
+
+    <div class="clear"></div>
+    </div>
+</div>
+
+<div class="wrapper" id="NavWrapper">
+	<div class="inner">
+    	<div class="navItem">
+            <span><img src="__PUBLIC__/img/homeIcon.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/student" target="_self">首页</a></span>
+        </div>
+        <div class="navItem">
+            <span><img src="__PUBLIC__/img/Memail.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/mailbox" target="_self">邮箱</a></span>
+        </div>
+    	<div class="navItem">
+            <span><img src="__PUBLIC__/img/MInfo.png" width="23"  height="" style="vertical-align:middle;" /></span>&nbsp;&nbsp;
+            <span  ><a href="__URL__/student" target="_self">个人档案</a></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+		<script>
+			$(document).ready(function(){
+				$("#logout").click(function(){
+					window.location.href="__ROOT__";
+				});
+				$("#change_password").click(function(){
+					window.location.href="__URL__/change_password";
+				});
+			});
+		</script>
 
 <style>
 #contentWrapper{
@@ -83,7 +128,7 @@ margin: 10px;
 float: left;
 border: solid 1px #C8E9F7;
 }
-/*MailNAv*/
+/*MailNAv*//*
 #logout:hover, #mailbox:hover {
 color: #F73D96;
 background-color: #EEE;
@@ -105,7 +150,7 @@ text-shadow: white 0px 0px 2px;
 #logout{
 	right: 0px;
 }
-
+*/
 .ctrl{
 position: absolute;
 width: 100px;
@@ -144,8 +189,8 @@ left: -10px;
  
  <div class="inner" style="padding:0px; position:relative; ">
  	<div id="Logo"><img src="__PUBLIC__/img/logo.png" width="120px;" /></div>	
- 	<div id="mailbox">邮箱</div>
-	<div id="logout">登出</div>
+ <!--	<div id="mailbox">邮箱</div>
+	<div id="logout">登出</div>-->
  	<div id="Info">
     	 <!--basic-->
            

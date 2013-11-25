@@ -172,19 +172,20 @@ $(document).ready(function(){
 	//buttons
 	var page = Number($("#pagenum").html());
 	var mx = Number($("#totalpage").html());
+	var per = <?php echo ($num_perpage); ?>;
 	var objtype = "<?php echo ($objtype); ?>";
 	
 	$("#prev").click(function(){
 		page--;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else
 			page = 1;
 	});
 	$("#next").click(function(){
 		page++;
 		if (valid(page, mx))
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		else 
 			page = mx;
 	});
@@ -192,7 +193,7 @@ $(document).ready(function(){
 		var val = Number($("#jumppage").val());
 		if (valid(val)){
 			page = val;
-			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page;
+			window.location.href="__ACTION__/objtype/"+objtype+"/page/"+page+"/num_perpage/"+per;
 		}
 	});
 });

@@ -151,7 +151,7 @@
 				
 				
 					<div id="scores">
-					<h2 align="center">荣誉</h2>
+					<h2 align="center">在校成绩</h2>
 						<table>
 							<tr>
 								<td>
@@ -216,7 +216,8 @@
 					<br class="position"/>
 					<br />
                     <div style="text-align:center;">
-					<input type="submit">
+					<input style="display:none" id="final_submit" type="submit">
+					<input id="submit" type="button" value="提交">
                     </div>
 				</form>
 			</div>
@@ -233,6 +234,23 @@ $(document).ready(function(){
 	$("input:checkbox").each(function(){
 		var content = $(this).parent().text(); 
 		$(this).val(content);
+	});
+	
+	$("#submit").click(function(){
+		var submit = true;
+		$("td>input").each(function(){
+			if ($(this).attr("type") == "checkbox")
+				return;
+			if (!submit) return;
+			if ($(this).val() == "")
+			{
+				alert("请将信息填写完整再提交！请留意基本信息与在校成绩模块。");
+				submit = false;
+				return;
+			}
+		});
+		if (submit)
+			$("#final_submit").click();
 	});
 });
 </script>
