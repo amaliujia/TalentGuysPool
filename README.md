@@ -3,7 +3,9 @@ TalentGuysPool
 
 Based on Html, CSS, Javascript, MySQL, PHP and ThinkPHP.
 
-I really miss the hacking time with you guys, @陈学家 @吴文杰, as well as our team - SYSU_WxW.
+The objective is to design a project of school-enterprise talent bank to help the undergraduates for better job hunting.
+
+And I really miss the hacking time with you guys, @陈学家 @吴文杰, as well as our team - SYSU_WxW.
 
 ThinkPHP
 ==============
