@@ -12,7 +12,7 @@ Copyright
 =======
 
 
-   Copyright (C) 2013 Rui WANG.
+   Copyright (C) 2012 Rui WANG, 陈学家，吴文杰.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU Affero General Public License, version 3,
