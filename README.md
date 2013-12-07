@@ -7,6 +7,31 @@ The objective is to design a project of school-enterprise talent bank to help th
 
 And I really miss the hacking time with you guys, @陈学家 @吴文杰, as well as our team - SYSU_WxW.
 
+
+Copyright
+=======
+
+/******************************************************************************
+
+   Copyright (C) 2013 Rui WANG.
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License, version 3,
+   as published by the Free Software Foundation.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program. If not, see <http://www.gnu.org/license/>.
+   
+*******************************************************************************/
+
+
+
+
 ThinkPHP
 ==============
 ThinkPHP is an open source PHP framework,aiming at simplifing enterprise Web application development.  
