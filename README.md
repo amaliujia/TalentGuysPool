@@ -11,7 +11,6 @@ And I really miss the hacking time with you guys, @陈学家 @吴文杰, as well
 Copyright
 =======
 
-/******************************************************************************
 
    Copyright (C) 2013 Rui WANG.
 
@@ -27,10 +26,6 @@ Copyright
    You should have received a copy of the GNU Affero General Public License
    along with this program. If not, see <http://www.gnu.org/license/>.
    
-*******************************************************************************/
-
-
-
 
 ThinkPHP
 ==============
